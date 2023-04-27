@@ -18,12 +18,16 @@ const ProductsList = ({ products }) => {
               </div>
               <div className="pl-4 pr-4 pb-4 pt-4 rounded-lg">
                 <h4 className="mt-1 font-semibold text-base leading-tight truncate text-gray-700">
-                  {_product.title} sticker
+                  {_product.title} 
                 </h4>
                 <div className="mt-1 text-sm text-gray-700">
                   {_product.description}
                 </div>
+                <div className="mt-1  font-black text-md-700 text-green-600">
+              R$ {_product.price}
+                </div>
               </div>
+
             </a>
           </Link>
         </div>

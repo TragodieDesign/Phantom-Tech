@@ -1,13 +1,20 @@
 import Head from "next/head"
+import { Container } from "react-bootstrap"
+import ControlledCarousel from "../components/ControlledCarousel"
 import ProductsList from "../components/ProductsList"
 import { getProducts } from "../utils/api"
+
+
 
 const HomePage = ({ products }) => {
   return (
     <div>
       <Head>
-        <title>Strapi Next.js E-commerce</title>
+        <title>Phantom Tech</title>
       </Head>
+      <Container>
+      <ControlledCarousel/>
+      </Container>
       <ProductsList products={products} />
     </div>
   )
